@@ -39,6 +39,10 @@ nav a {
     color: hsl(228, 45%, 44%);
 }
 
+.nav_desktop {
+    display: none;
+}
+
 .nav_items_mobile {
     display: none;
 }
@@ -106,14 +110,14 @@ nav a {
     text-align: center;
 }
 
-.creations {
+.creations_mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.creations h2 {
+.creations_mobile h2 {
     margin-top: 80px;
 }
 
@@ -155,6 +159,14 @@ nav a {
     padding: 10px 40px;
     font-family: 'Alata', sans-serif;
     font-size: 1.2em;
+}
+
+.desktop {
+    display: none;
+}
+
+.creations_desktop {
+    display: none;
 }
 
 
@@ -205,6 +217,74 @@ nav a {
         font-size: 2.5rem;
         height: auto;
     }
+    .mobile {
+        display: none;
+    }
+    .leader {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop {
+        display: block;
+        position: absolute;
+        left: -400px;
+    }
+    .virtual_image {
+        width: 500px;
+    }
+    .paragraphe_content {
+        position: absolute;
+        top: 170px;
+        left: -70px;
+        background-color: white;
+        height: 300px;
+        width: 400px;
+        padding: 30px;
+    }
+    .paragraphe_content h1 p,
+    .paragraphe p {
+        text-align: start;
+    }
+    .paragraphe_content h1 {
+        margin-left: 20px;
+    }
+    .leader_elements {
+        position: relative;
+        height: 500px;
+    }
+    .creations_mobile {
+        display: none;
+    }
+    .creations_desktop {
+        margin-top: 50px;
+        min-width: 100VW;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        grid-gap: 20px;
+    }
+    .creations_image {
+        width: 200px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .creations_image img {
+        object-fit: cover;
+        height: 500px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .creations_title {
+        text-align: CENTER;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .paragraphe_content {
+        left: -10px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -219,6 +299,15 @@ nav a {
     .header {
         background-size: cover;
         height: 700px;
+    }
+    .creations_desktop {
+        grid-template-columns: repeat(4, 200px);
+    }
+    .creations_title {
+        margin-left: -600px;
+    }
+    .paragraphe_content {
+        width: 500px;
     }
 }
 
