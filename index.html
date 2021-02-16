@@ -21,9 +21,19 @@
     <header class="header">
         <nav class="mobile_nav">
             <a href="" class="logo">loopstudios</a>
-            <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd" id="icon_nav"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
-            <div class="nav_items_mobile">
-                <a href="">About</a><a href="">Careers</a><a href="">Events</a><a href="">Products</a><a href="">Support</a>
+            <p id="hamburger">
+                <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd" id="icon_nav"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+
+            </p>
+            <div class="nav_items_onclick" id="nav">
+                <div class="logo_nav">
+                    <a>loopstudios</a>
+                    <button id="close_btn">&#x2715</button>
+                </div>
+                <div class="mobile_nav_items">
+                    <a href="">About</a><a href="">Careers</a><a href="">Events</a><a href="">Products</a><a href="">Support</a>
+
+                </div>
             </div>
         </nav>
         <nav class="nav_desktop">
@@ -142,11 +152,34 @@
     <div class="button_see">
         <button class="see_all">SEE ALL</button>
     </div>
-    About Careers Events Products Support © 2021 Loopstudios. All rights reserved.
+
 
     <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Jérémy Kerckhove</a>.
     </div>
 </body>
+<footer class="footer">
+    <div class="left_footer">
+        <p class="logo">loopstudios</p>
+        <ul class="footer_nav">
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </div>
+    <div class="right_footer">
+        <ul class="footer_logos">
+            <li><img src="images/icon-facebook.svg" alt="Icone Facebook"></li>
+            <li><img src="images/icon-twitter.svg" alt="icone Twitter"> </li>
+            <li><img src="images/icon-pinterest.svg" alt="icone pinterest"></li>
+            <li><img src="images/icon-instagram.svg" alt="icone instagram"></li>
+        </ul>
+        <p class="copyright">&copy; 2021 Loopstudios. All rights reserved.</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
 
 </html>
